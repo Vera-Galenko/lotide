@@ -50,3 +50,7 @@ function eqArrays(first, second){
     console.log(middle([1, 2, 5, 7])); 
     console.log(middle([1, 2, 5, 7, 8, 9, 8, 9]));
     console.log(middle([1, 2, 5, 7, 6]));
+
+    const person = { firstName: "Khurram" };
+    const firstName = person[firstName]
+    console.log(firstName);
