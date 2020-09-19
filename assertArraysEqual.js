@@ -1,7 +1,7 @@
-function assertArraysEqual(first, second){
+const assertArraysEqual = function (first, second){
     let result = true;
-    let tick = '✅✅✅';
-    let cross = "🛑🛑🛑";
+    // let tick = '✅✅✅';
+    // let cross = "🛑🛑🛑";
     if (first.length !== second.length){
         result = false;
     } else{
@@ -10,12 +10,17 @@ function assertArraysEqual(first, second){
                 result = false;
             }
         }  
-    }
-    if (result === true){
-        console.log(`${tick} Assertion Passed: ${first} === ${second}`);
-    }else{
-        console.log(`${cross} Assertion Failed: ${first} !== ${second}`);
-    }
+    } return result;
+  
 }
 
-assertArraysEqual([1,2,3,8], [1,2,3]);
+module.exports = assertArraysEqual;
+// const assertEqual = function(actual, expected) {
+//     let tick = '✅✅✅';
+//     let cross = "🛑🛑🛑";
+//     if (actual === expected) {
+//       console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
+//     } else if (actual !== expected) {
+//       console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
+//     }
+//   };
