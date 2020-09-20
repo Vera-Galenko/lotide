@@ -24,38 +24,39 @@ const eqObjects = function(object1, object2) {
   return result;
 };
 
+module.exports = eqObjects;
 
-const assertEqual = function(actual, expected) {
-    let tick = '✅✅✅';
-    let cross = "🛑🛑🛑";
-    let result3 = "";
-    if (actual === expected) {
-      result3 = `${tick} Assertion Passed: ${actual} === ${expected}`;
-    } else if (actual !== expected) {
-      result3 = `${cross} Assertion Failed: ${actual} !== ${expected}`;
-    } return result3;
-  };
+// const assertEqual = function(actual, expected) {
+//     let tick = '✅✅✅';
+//     let cross = "🛑🛑🛑";
+//     let result3 = "";
+//     if (actual === expected) {
+//       result3 = `${tick} Assertion Passed: ${actual} === ${expected}`;
+//     } else if (actual !== expected) {
+//       result3 = `${cross} Assertion Failed: ${actual} !== ${expected}`;
+//     } return result3;
+//   };
   
-  const ab = { a: "1", b: "2" };
-  const ba = { b: "2", a: "1"};
-  let result1 = eqObjects(ab, ba); // => true
-  console.log(result1);
-  const abc = { a: "1", b: "2", c: "3" };
-  let result2 = eqObjects(ab, abc);
-  console.log(result2);
+//   const ab = { a: "1", b: "2" };
+//   const ba = { b: "2", a: "1"};
+//   let result1 = eqObjects(ab, ba); // => true
+//   console.log(result1);
+//   const abc = { a: "1", b: "2", c: "3" };
+//   let result2 = eqObjects(ab, abc);
+//   console.log(result2);
 
-  console.log(assertEqual(result1, true));
-  console.log(assertEqual(result2, true));
+//   console.log(assertEqual(result1, true));
+//   console.log(assertEqual(result2, true));
 
 
-  const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-let result4 = eqObjects(cd, dc); // => true
+//   const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// let result4 = eqObjects(cd, dc); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-let result5 = eqObjects(cd, cd2); 
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// let result5 = eqObjects(cd, cd2); 
 
-console.log(assertEqual(result4, true));
-console.log(assertEqual(result5, true));
+// console.log(assertEqual(result4, true));
+// console.log(assertEqual(result5, true));
 
 

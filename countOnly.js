@@ -46,22 +46,24 @@ const firstNames = [
     "Fang",
     "Joe"
   ];
+  module.exports = countOnly;
 
-  const assertEqual = function(actual, expected) {
-    let tick = '✅✅✅';
-    let cross = "🛑🛑🛑";
-    if (actual === expected) {
-      console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
-    } else if (actual !== expected) {
-      console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
-  
-  const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-  console.log(result1);
+  // const assertEqual = function(actual, expected) {
+  //   let tick = '✅✅✅';
+  //   let cross = "🛑🛑🛑";
+  //   if (actual === expected) {
+  //     console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
+  //   } else if (actual !== expected) {
+  //     console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
+  //   }
+  // };
   
-  assertEqual(result1["Jason"], 1);
-  assertEqual(result1["Karima"], undefined);
-  assertEqual(result1["Fang"], 2);
-  assertEqual(result1["Agouhanna"], undefined);
+  // const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+
+  // console.log(result1);
+  
+  // assertEqual(result1["Jason"], 1);
+  // assertEqual(result1["Karima"], undefined);
+  // assertEqual(result1["Fang"], 2);
+  // assertEqual(result1["Agouhanna"], undefined);

@@ -19,18 +19,18 @@ const bestTVShowsByGenre = {
     drama:  "The Wire"
   };
 
-
+  module.exports = findKeyByValue;
   
-const assertEqual = function(actual, expected) {
-    let tick = '✅✅✅';
-    let cross = "🛑🛑🛑";
-    if (actual === expected) {
-      console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
-    } else if (actual !== expected) {
-      console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
+// const assertEqual = function(actual, expected) {
+//     let tick = '✅✅✅';
+//     let cross = "🛑🛑🛑";
+//     if (actual === expected) {
+//       console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
+//     } else if (actual !== expected) {
+//       console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
+//     }
+//   };
 
 
-  assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-  assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+//   assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+//   assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

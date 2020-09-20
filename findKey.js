@@ -17,16 +17,16 @@ let result1 = findKey({
   }, x => x.stars === 2) // => "noma"
   console.log(result1);
 
+  module.exports = findKey;
 
+  // const assertEqual = function(actual, expected) {
+  //   let tick = '✅✅✅';
+  //   let cross = "🛑🛑🛑";
+  //   if (actual === expected) {
+  //     console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
+  //   } else if (actual !== expected) {
+  //     console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
+  //   }
+  // };
 
-  const assertEqual = function(actual, expected) {
-    let tick = '✅✅✅';
-    let cross = "🛑🛑🛑";
-    if (actual === expected) {
-      console.log(`${tick} Assertion Passed: ${actual} === ${expected}`);
-    } else if (actual !== expected) {
-      console.log(`${cross} Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
-
-  assertEqual(result1, "noma");
+  // assertEqual(result1, "noma");
